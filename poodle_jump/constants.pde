@@ -19,8 +19,8 @@ float dragCoeff = 0.03;
 color bgColor = color(255,253,231);
 
 // Player Parameters
-float playerX, playerY;
-float playerVx, playerVy;
+float playerX=displayWidth/2, playerY=displayHeight/2;
+float playerVx=5, playerVy=-5;
 float playerRadius = 20;
 color playerColor = color(179,157,219);
 
@@ -33,7 +33,7 @@ float platforms[][] = new float [lenPlatforms][2];
 //Current Platform Index
 int platformIndex = 0;
 // Platform Parameters
-float platformLength = 50, platformHeight = 10;
+float platformLength = 80, platformHeight = 10;
 float platformRadius = platformHeight*0.5;
 color platformColor = color(139,195,74);
 

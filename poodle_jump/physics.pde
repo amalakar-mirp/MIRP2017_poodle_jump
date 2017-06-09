@@ -1,5 +1,12 @@
 void updatePlayerVelocity() {
-  // Update Player Velocities according to keys pressed
+  playerY=playerY+;
+  playerVy-=gravity;
+  if(up)
+  playerY-=20;// Update Player Velocities according to keys pressed
+  if(left)
+  playerX-=10;
+  if(right)
+  playerX+=10;
   // Apply Gravity and Air Drag
 }
 

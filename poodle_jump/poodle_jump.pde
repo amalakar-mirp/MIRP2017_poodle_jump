@@ -5,7 +5,9 @@ void setup() {
 }
 
 void draw() {
-  
+  drawPlayer();
+  initializePlatforms();
+  updatePlayerVelocity();
 }
 
 void drawStartScreen() {
@@ -18,6 +20,9 @@ void drawGameScreen() {
 }
 
 void drawPlayer() {
+  background(bgColor);
+  fill(playerColor);
+  ellipse(playerX,playerY,playerRadius*2,playerRadius*2);
 }
 
 void drawPlatforms() {
@@ -29,7 +34,8 @@ void resetGame(){
 }
 
 void initializePlatforms() {
-  // Create Initial Set of Platforms
+  rect(100,100,platformLength,platformHeight);// Create Initial Set of Platforms
+  rect(300,150,platformLength,platformHeight);
 }
 
 void displayScore() {
